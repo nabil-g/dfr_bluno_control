@@ -1,0 +1,3 @@
+[v-cloak] {
+  display: none; /* allows to hide the element until the vue instance is ready (to make the vue syntax invisible) */
+}
