@@ -12,6 +12,31 @@
   <body>
 
     <div id="app" v-cloak>
+      <nav class="navbar is-info">
+        <div class="navbar-brand">
+            <a class="navbar-item is-big" href="#">
+              Bluno Control
+            </a>
+        </div>
+      </nav>
+
+
+      <section class="section" v-if="connected">
+
+      </section>
+
+      <section class="section" v-if="scanning">
+
+      </section>
+
+      <section class="section container" v-else>
+            <h1 class="title">
+            Bluno Control
+            </h1>
+            <p class="subtitle">
+              Easily send and receive data to/from your Bluno device.
+            </p>
+        </section>
 
     </div>
 
@@ -19,6 +44,6 @@
     <script type="text/javascript" src="lib/vue.js"></script>
     <script type="text/javascript" src="lib/buefy.js"></script>
     <script type="text/javascript" src="lib/easyble.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="lib/easyble.js"></script>    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
