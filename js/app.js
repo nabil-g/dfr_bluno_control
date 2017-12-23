@@ -107,6 +107,14 @@ var app = new Vue({
       evothings.easyble.stopScan();
       evothings.easyble.closeConnectedDevices();
 
+    },
+    notif: function () {
+      this.$toast.open({
+                    duration: 5000,
+                    message: 'hihi',
+                    position: 'is-bottom',
+                    type: 'is-danger'
+                });
     }
   }
 });
