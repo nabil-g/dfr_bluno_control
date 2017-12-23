@@ -5,45 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Bluno Control</title>
-    <link rel="stylesheet" href="lib/buefy.min.css">
+    <link rel="stylesheet" href="lib/materialize.min.css">
     <link rel="stylesheet" href="lib/iconfont/material-icons.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
 
     <div id="app" v-cloak>
-      <nav class="navbar is-info">
-        <div class="navbar-brand">
-            <a class="navbar-item is-big" href="#">
-              Bluno Control
-            </a>
-        </div>
-      </nav>
 
+      <div class="navbar-fixed">
+        <nav>
+           <div class="nav-wrapper blue darken-3">
+             <a href="#" class="brand-logo center">BlunoControl</a>
+           </div>
+        </nav>
+      </div>
 
-      <section class="section" v-if="connected">
-
-      </section>
-
-      <section class="section" v-if="scanning">
+      <section class="" v-if="connected">
 
       </section>
 
-      <section class="section container" v-else>
-            <h1 class="title">
-            Bluno Control
-            </h1>
-            <p class="subtitle">
-              Easily send and receive data to/from your Bluno device.
-            </p>
-        </section>
+      <section class="" v-if="scanning">
+
+      </section>
+
+      <section class="section center-align" v-else>
+        <h3>First, you need start scanning for Bluetooth devices</h3>
+        <a class="waves-effect waves-light btn blue darken-3" @click="startScan()">Scan</a>
+      </section>
 
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/vue.js"></script>
-    <script type="text/javascript" src="lib/buefy.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/materialize.min.js"></script>
     <script type="text/javascript" src="lib/easyble.js"></script>
-    <script type="text/javascript" src="lib/easyble.js"></script>    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

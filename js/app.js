@@ -1,5 +1,3 @@
-Vue.use(Buefy);
-
 var app = new Vue({
   el: "#app",
   data:{
